@@ -15,7 +15,6 @@
     <!--Import jQuery before materialize.js-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
-    <script type="text/javascript" src="js/resizeImage.js"></script>
     <div class="navbar-fixed">
       <nav style="background-color: #FFFFFF">
         <div class="blue darken-4 hide-on-med-and-up" style="position: relative; line-height: 0">
@@ -45,7 +44,7 @@
     </div>
     <div class="row center-align">
       <div class="col l12 m12 s12">
-        <a href="orgChartFullSize.html"><img class="myImage" src="images/Organizational_Chart.jpg" alt="organizational chart"/></a>
+        <a id="imageLink" href="orgChartFullSize.html"></a>
       </div>
       <div class="col l12 m12 s12">
         <p>This organizational chart depicts a simplified company hierarchy. Each level of the hierarchy was color coded to separate the positions based on their distance from the President. Furthermore, the boxes encapsulating the individual positions were given a shadow in order to make the organizational chart stand apart from the background. The background was given a linear gradient to compliment the color scheme for the individual positions. A crystalline effect was added to the background to give depth to the piece.</p>
@@ -54,6 +53,8 @@
     <script>
       $(document).ready(function() {
         $(".button-collapse").sideNav();
+        var height = window.innerHeight/2;
+        $('<img height="' + height + 'px" class="myImage" src="images/Organizational_Chart.jpg" alt="Organizational Chart"/>').appendTo('#imageLink');
       });
     </script>
   </body>
