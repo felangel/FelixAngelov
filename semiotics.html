@@ -38,68 +38,58 @@
         </div>
       </nav>
     </div>
-    <div class="row" style="margin-top: 3%">
-      <div class="col l12 s12 m12">
-        <p class="section"><img style="vertical-align: middle" src="images/brush_icon.png" width="7px"/><span style="padding-left: 1%">ARTDES 176</span><hr/></p>
+    <div class="row center-align">
+      <h3>Semiotics</h3>
+      <p>February 2nd, 2016</p><hr/>
+    </div>
+    <div class="row center-align">
+      <div class="col l12 m12 s12">
+        <a id="imageLink1" href="#?"></a>
+      </div>
+      <div class="col l12 m12 s12">
+        <h3 style="color: #f9f9f9">iPhone</h3>
       </div>
     </div>
-    <div class="row">
-      <div class="col s12 m6 l3">
-        <div class="card">
-          <div class="card-image">
-            <a href="orgChartFullSize.html"><img height="250px" src="images/Organizational_Chart.jpg" alt="organizational chart"/></a>
-          </div>
-          <div class="card-content center-align">
-            <a class="underline" style="font-size: 1.5em;" href="orgChart.html"><span>Org Chart</span></a>
-            <p class="blogTitle">
-              Felix Angelov<span style="float:right;">1/25/2016</span>
-            </p>
-          </div>
-        </div>
+    <div class="row center-align">
+      <div class="col l12 m12 s12">
+        <a id="imageLink2" href="#?"></a>
       </div>
-      <div class="col s12 m6 l3">
-        <div class="card">
-          <div class="card-image">
-            <a href="familyTreeFullSize.html"><img height="250px" src="images/Family_Tree.jpg" alt="family tree"/></a>
-          </div>
-          <div class="card-content center-align">
-            <a class="underline" style="font-size: 1.5em;" href="familyTree.html"><span>Family Tree</span></a>
-            <p class="blogTitle">
-              Felix Angelov<span style="float:right;">1/25/2016</span>
-            </p>
-          </div>
-        </div>
+      <div class="col l12 m12 s12">
+        <h3 style="color: #f9f9f9">Rainbow</h3>
       </div>
-      <div class="col s12 m6 l3">
-        <div class="card">
-          <div class="card-image">
-            <a href="rebusFullSize.html"><img height="250px" src="images/Rebus.jpg" alt="rebus"/></a>
-          </div>
-          <div class="card-content center-align">
-            <a class="underline" style="font-size: 1.5em;" href="rebus.html"><span>Rebus Puzzle</span></a>
-            <p class="blogTitle">
-              Felix Angelov<span style="float:right;">2/02/2016</span>
-            </p>
-          </div>
-        </div>
+    </div>
+    <div class="row center-align">
+      <div class="col l12 m12 s12">
+        <a id="imageLink3" href="#?"></a>
       </div>
-      <div class="col s12 m6 l3">
-        <div class="card">
-          <div class="card-image">
-            <a href="#?"><img height="250px" src="images/Semiotics1.jpg" alt="Semiotics"/></a>
-          </div>
-          <div class="card-content center-align">
-            <a class="underline" style="font-size: 1.5em;" href="semiotics.html"><span>Semiotics</span></a>
-            <p class="blogTitle">
-              Felix Angelov<span style="float:right;">2/02/2016</span>
-            </p>
-          </div>
-        </div>
+      <div class="col l12 m12 s12">
+        <h3 style="color: #f9f9f9">Doughnuts</h3>
+      </div>
+    </div>
+    <div class="row center-align">
+      <div class="col l12 m12 s12">
+        <a id="imageLink4" href="#?"></a>
+      </div>
+      <div class="col l12 m12 s12">
+        <h3 style="color: #f9f9f9">Lighthouse</h3>
+      </div>
+    </div>
+    <div class="row center-align">
+      <div class="col l12 m12 s12">
+        <a id="imageLink5" href="#?"></a>
+      </div>
+      <div class="col l12 m12 s12">
+        <h3 style="color: #f9f9f9">Cartwheel</h3>
       </div>
     </div>
     <script>
       $(document).ready(function() {
         $(".button-collapse").sideNav();
+        var height = window.innerHeight/2;
+        var numImages = 5;
+        for(var i = 1; i <= numImages; i++) {
+          $('<img height="' + height + 'px" class="myImage" src="images/Semiotics' + i + '.jpg" alt="Semiotics"/>').appendTo('#imageLink' + i);
+        }
       });
     </script>
   </body>
