@@ -33,7 +33,7 @@
             <li><a href="#?"><img style="position: relative; top: 10px" width="30px" src="http://cyberpr.com/assets/instagram-logo-transparent-background_zps6befc220.gif"/></a></li>
           </ul>
           <ul id="slide-out" class="side-nav">
-            <li class="active"><a href="#?">Blog</a></li>
+            <li class="active"><a href="index.html">Blog</a></li>
           </ul>
         </div>
       </nav>
@@ -81,10 +81,10 @@
       $(document).ready(function() {
         $(".button-collapse").sideNav();
         var height = window.innerHeight/2;
-        $('<img height="' + height + 'px" class="myImage" src="images/LogoType.jpg" alt="Logo"/>').appendTo('#imageLink');
-        $('<img height="' + height + 'px" class="myImage" src="images/BusinessCard.jpg" alt="Business Card"/>').appendTo('#imageLink1');
-        $('<img height="' + height + 'px" class="myImage" src="images/Letterhead.jpg" alt="Letterhead"/>').appendTo('#imageLink2');
-        $('<img height="' + height + 'px" class="myImage" src="images/Envelope.jpg" alt="Envelope"/>').appendTo('#imageLink3');
+        $('<img class="myImage" style="max-height: ' + height + 'px; max-width: ' + window.innerWidth * 0.75 + 'px" src="images/LogoType.jpg" alt="Logo"/>').appendTo('#imageLink');
+        $('<img class="myImage" style="max-height: ' + height + 'px; max-width: ' + window.innerWidth * 0.75 + 'px" src="images/BusinessCard.jpg" alt="Business Card"/>').appendTo('#imageLink1');
+        $('<img class="myImage" style="max-height: ' + height + 'px; max-width: ' + window.innerWidth * 0.75 + 'px" src="images/Letterhead.jpg" alt="Letterhead"/>').appendTo('#imageLink2');
+        $('<img class="myImage" style="max-height: ' + height + 'px; max-width: ' + window.innerWidth * 0.75 + 'px" src="images/Envelope.jpg" alt="Envelope"/>').appendTo('#imageLink3');
       });
     </script>
   </body>

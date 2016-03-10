@@ -33,7 +33,7 @@
             <li><a href="#?"><img style="position: relative; top: 10px" width="30px" src="http://cyberpr.com/assets/instagram-logo-transparent-background_zps6befc220.gif"/></a></li>
           </ul>
           <ul id="slide-out" class="side-nav">
-            <li class="active"><a href="#?">Blog</a></li>
+            <li class="active"><a href="index.html">Blog</a></li>
           </ul>
         </div>
       </nav>
@@ -88,7 +88,7 @@
         var height = window.innerHeight/2;
         var numImages = 5;
         for(var i = 1; i <= numImages; i++) {
-          $('<img height="' + height + 'px" class="myImage" src="images/Semiotics' + i + '.jpg" alt="Semiotics"/>').appendTo('#imageLink' + i);
+          $('<img class="myImage" style="max-height: ' + height + 'px; max-width: ' + window.innerWidth * 0.75 + 'px" src="images/Semiotics' + i + '.jpg" alt="Semiotics"/>').appendTo('#imageLink' + i);
         }
       });
     </script>
